@@ -11,8 +11,23 @@ public class Orders {
 		orders = new Hashtable<String, Integer>();
 	}
 	
-	public void addOrder(String custName)
+	public synchronized void addOrder(String custName)
 	{
 		orders.put(custName, 1);
+	}
+
+	public synchronized void completed(String custName)
+	{
+		
+	}
+	
+	public synchronized void picking()
+	{
+		
+	}
+	
+	public synchronized void serving()
+	{
+		
 	}
 }
